@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Massyle Oumessaoud — AI Research Scientist & Data Engineer</title>
+  <meta name="description" content="Portfolio of Massyle Oumessaoud — AI Research Scientist at Uppsala University (Sweden), Data Engineer, and MSc candidate in Computer Science & AI at UTC. Building intelligent systems at the intersection of research and production." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Massyle Oumessaoud — AI Research Scientist" />
+  <meta property="og:description" content="AI Research Scientist at Uppsala University. Building decision support tools, Bayesian models, and data platforms." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://massyle78.github.io" />
+  <meta property="og:image" content="https://massyle78.github.io/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Massyle Oumessaoud",
+    "url": "https://massyle78.github.io",
+    "jobTitle": "AI Research Scientist",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Uppsala University"
+    },
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Université de Technologie de Compiègne (UTC)"
+    },
+    "sameAs": [
+      "https://github.com/Massyle78",
+      "https://www.linkedin.com/in/massyle-oumessaoud/"
+    ]
+  }
+  </script>
+
+  <!-- Fonts: Satoshi (display) + Switzer (body) from Fontshare -->
+  <link rel="preconnect" href="https://api.fontshare.com" crossorigin />
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,900&f[]=switzer@400,500&display=swap" rel="stylesheet" />
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="/src/css/main.css" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+</head>
+<body>
+
+  <!-- ========== NOISE OVERLAY ========== -->
+  <div class="noise-overlay" aria-hidden="true"></div>
+  <div class="mesh-gradient" aria-hidden="true"></div>
+
+  <!-- ========== CUSTOM CURSOR ========== -->
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <a href="#hero" class="nav__logo">M<span class="accent">.</span>O</a>
+    <div class="nav__links">
+      <a href="#about" class="nav__link">About</a>
+      <a href="#projects" class="nav__link">Projects</a>
+      <a href="#publications" class="nav__link">Research</a>
+      <a href="#experience" class="nav__link">Experience</a>
+      <a href="#blog" class="nav__link">Notes</a>
+      <a href="#contact" class="nav__link">Contact</a>
+    </div>
+    <div class="nav__actions">
+      <button class="theme-toggle" aria-label="Toggle theme" title="Toggle light/dark mode">
+        <svg class="theme-toggle__icon theme-toggle__sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+        </svg>
+        <svg class="theme-toggle__icon theme-toggle__moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+      </button>
+      <button class="nav__burger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" aria-hidden="true">
+    <a href="#about" class="mobile-menu__link">About</a>
+    <a href="#projects" class="mobile-menu__link">Projects</a>
+    <a href="#publications" class="mobile-menu__link">Research</a>
+    <a href="#experience" class="mobile-menu__link">Experience</a>
+    <a href="#blog" class="mobile-menu__link">Notes</a>
+    <a href="#contact" class="mobile-menu__link">Contact</a>
+  </div>
+
+  <!-- ========== HERO ========== -->
+  <section id="hero" class="hero">
+    <canvas class="hero__canvas" aria-hidden="true"></canvas>
+    <div class="hero__content">
+      <p class="hero__label reveal-text">AI Research Scientist &middot; Let the science guide the data, not the reverse. </p>
+      <h1 class="hero__title">
+        <span class="hero__title-line reveal-text">Massyle</span>
+        <span class="hero__title-line reveal-text">Oumessaoud<span class="accent">.</span></span>
+      </h1>
+      <p class="hero__subtitle reveal-text">
+        I build intelligent systems at the intersection of research and production — from Bayesian decision tools for healthcare to scalable data platforms.
+      </p>
+      <div class="hero__cta reveal-text">
+        <a href="#projects" class="btn btn--primary">View Projects</a>
+        <a href="#contact" class="btn btn--ghost">Get in Touch</a>
+      </div>
+      <div class="hero__scroll-indicator" aria-hidden="true">
+        <div class="hero__scroll-line"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section id="about" class="section about">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__number">01</span>
+        <h2 class="section__title">About</h2>
+      </div>
+      <div class="about__grid">
+        <div class="about__photo-wrapper">
+          <div class="about__photo">
+              <img src="/photos/Photo de profil Massyle.png" alt="Massyle Oumessaoud" loading="lazy" />
+          </div>
+          <div class="about__photo-accent" aria-hidden="true"></div>
+        </div>
+        <div class="about__text">
+          <p class="about__bio">
+            I'm an AI Research Scientist at <strong>Uppsala University</strong>, where I design decision support tools that help medical professionals navigate uncertainty in AI-driven diagnostics. My work bridges Bayesian modeling, human-centered design, and clinical impact.
+          </p>
+          <p class="about__bio">
+            Previously, I architected data platforms at <strong>Polynom</strong> (Paris), unifying scattered data sources into production-ready pipelines. Before that, I published research on optimization algorithms at the <strong>University of Science and Technology of Hanoi</strong>.
+          </p>
+          <p class="about__bio">
+            I'm completing my MSc in Computer Science, AI & Data Science at <strong>UTC</strong> (with honors). I'm driven by the conviction that AI should be transparent and rigorously regulated, not just technically impressive.
+          </p>
+        </div>
+      </div>
+
+      <!-- Skills -->
+      <div class="skills">
+        <h3 class="skills__heading">Core Stack</h3>
+        <div class="skills__grid">
+          <div class="skill-domain">
+            <h4 class="skill-domain__title">Machine Learning</h4>
+            <div class="skill-domain__tags">
+              <span class="skill-tag">PyTorch</span>
+              <span class="skill-tag">Scikit-learn</span>
+              <span class="skill-tag">Bayesian Models</span>
+              <span class="skill-tag">Computer Vision</span>
+              <span class="skill-tag">SpeechBrain</span>
+              <span class="skill-tag">Hugging Face</span>
+            </div>
+          </div>
+          <div class="skill-domain">
+            <h4 class="skill-domain__title">Data Engineering</h4>
+            <div class="skill-domain__tags">
+              <span class="skill-tag">GCP</span>
+              <span class="skill-tag">Snowflake</span>
+              <span class="skill-tag">Airflow</span>
+              <span class="skill-tag">Spark</span>
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">Docker</span>
+            </div>
+          </div>
+          <div class="skill-domain">
+            <h4 class="skill-domain__title">Development</h4>
+            <div class="skill-domain__tags">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">FastAPI</span>
+              <span class="skill-tag">SQL</span>
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">CI/CD</span>
+              <span class="skill-tag">Streamlit</span>
+            </div>
+          </div>
+          <div class="skill-domain">
+            <h4 class="skill-domain__title">AI & LLMs</h4>
+            <div class="skill-domain__tags">
+              <span class="skill-tag">LangChain</span>
+              <span class="skill-tag">Vertex AI</span>
+              <span class="skill-tag">Prompt Engineering</span>
+              <span class="skill-tag">RAG</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Metrics -->
+      <div class="metrics">
+        <div class="metric" data-target="1" data-suffix="+">
+          <span class="metric__number">0</span>
+          <span class="metric__label">Peer-reviewed Publication</span>
+        </div>
+        <div class="metric" data-target="2">
+          <span class="metric__number">0</span>
+          <span class="metric__label">Hackathon Finals</span>
+        </div>
+        <div class="metric" data-target="3">
+          <span class="metric__number">0</span>
+          <span class="metric__label">Production Data Platforms</span>
+        </div>
+        <div class="metric" data-target="4">
+          <span class="metric__number">0</span>
+          <span class="metric__label">Countries Worked In</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section id="projects" class="section projects">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__number">02</span>
+        <h2 class="section__title">Projects</h2>
+      </div>
+
+      <!-- Filter -->
+      <div class="projects__filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="research">Research</button>
+        <button class="filter-btn" data-filter="product">Product</button>
+        <button class="filter-btn" data-filter="hackathon">Hackathon</button>
+        <button class="filter-btn" data-filter="data">Data Engineering</button>
+      </div>
+
+      <!-- Featured Project -->
+      <article class="project-card project-card--featured" data-category="research">
+        <div class="project-card__visual">
+          <img src="/photos/AI Decision Support.png" alt="AI Decision Support for Clinical Diagnostics" class="project-card__img" loading="lazy" />
+        </div>
+        <div class="project-card__content">
+          <span class="project-card__badge">Featured &middot; Research</span>
+          <h3 class="project-card__title">AI Decision Support for Clinical Diagnostics</h3>
+          <p class="project-card__problem"><strong>Problem:</strong> Medical staff struggle to interpret uncertainty in AI model outputs, leading to diagnostic errors.</p>
+          <p class="project-card__approach"><strong>Approach:</strong> Designed Python-based decision support tools leveraging Bayesian classification models. Evaluated performance with novel 3D ROC curve metrics and built user-friendly interfaces for non-technical clinical teams.</p>
+          <p class="project-card__result"><strong>Impact:</strong> Reduced diagnostic uncertainty interpretation errors. Translated complex statistical outputs into actionable clinical insights.</p>
+          <div class="project-card__stack">
+            <span>PyTorch</span><span>Pandas</span><span>NumPy</span><span>Scikit-learn</span>
+          </div>
+          <div class="project-card__links">
+            <a href="https://github.com/Massyle78" target="_blank" rel="noopener" class="project-card__link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project Grid -->
+      <div class="projects__grid">
+
+        <article class="project-card" data-category="hackathon">
+          <div class="project-card__visual project-card__visual--small">
+            <img src="/photos/hackathon_google.jfif" alt="Google AI Agents Hackathon" class="project-card__img" loading="lazy" />
+          </div>
+          <div class="project-card__content">
+            <span class="project-card__badge">Hackathon Finalist</span>
+            <h3 class="project-card__title">Google AI Agents — Biodiversity Monitoring</h3>
+            <p class="project-card__problem"><strong>Problem:</strong> Monitoring biodiversity at scale requires processing massive satellite imagery with AI agents.</p>
+            <p class="project-card__approach"><strong>Approach:</strong> Built an MVP on Google Cloud using LangChain agents and Vertex AI to analyze satellite imagery for ecological pattern detection.</p>
+            <p class="project-card__result"><strong>Impact:</strong> Finalist presentation before a technical jury. Demonstrated viable cloud-native AI pipeline for environmental monitoring.</p>
+            <div class="project-card__stack">
+              <span>LangChain</span><span>Vertex AI</span><span>GCP</span><span>Satellite APIs</span>
+            </div>
+            <div class="project-card__links">
+              <a href="https://github.com/Massyle78" target="_blank" rel="noopener" class="project-card__link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="hackathon">
+          <div class="project-card__visual project-card__visual--small">
+            <img src="/photos/hackathon_sopra.jfif" alt="Sopra Steria Hackathon" class="project-card__img" loading="lazy" />
+          </div>
+          <div class="project-card__content">
+            <span class="project-card__badge">Hackathon Finalist</span>
+            <h3 class="project-card__title">Deepfake Voice Detection System</h3>
+            <p class="project-card__problem"><strong>Problem:</strong> Rising deepfake audio attacks require robust voice authentication systems.</p>
+            <p class="project-card__approach"><strong>Approach:</strong> Combined ML models (SpeechBrain, Torchaudio) with rule-based expert systems to build a hybrid detection pipeline. Deployed via Streamlit for real-time testing.</p>
+            <p class="project-card__result"><strong>Impact:</strong> Sopra Steria Hackathon finalist. Demonstrated effective deepfake detection combining neural and symbolic AI.</p>
+            <div class="project-card__stack">
+              <span>PyTorch</span><span>SpeechBrain</span><span>Torchaudio</span><span>Streamlit</span>
+            </div>
+            <div class="project-card__links">
+              <a href="https://github.com/Massyle78" target="_blank" rel="noopener" class="project-card__link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="product">
+          <div class="project-card__visual project-card__visual--small">
+            <img src="/photos/centralised_platform.png" alt="Centralized Data Platform" class="project-card__img" loading="lazy" />
+          </div>
+          <div class="project-card__content">
+            <span class="project-card__badge">Product</span>
+            <h3 class="project-card__title">Centralized Data Platform — Polynom</h3>
+            <p class="project-card__problem"><strong>Problem:</strong> Fragmented client data sources causing slow processing, high costs, and data inconsistency.</p>
+            <p class="project-card__approach"><strong>Approach:</strong> Architected a unified data platform on GCP with ELT pipelines (Airflow, FastAPI, PostgreSQL), Keycloak for auth, and Grafana for monitoring.</p>
+            <p class="project-card__result"><strong>Impact:</strong> Cut processing time significantly. Enabled sales teams to access unified analytics without engineering support.</p>
+            <div class="project-card__stack">
+              <span>GCP</span><span>FastAPI</span><span>Airflow</span><span>PostgreSQL</span><span>Docker</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="data">
+          <div class="project-card__visual project-card__visual--small">
+            <img src="/photos/datawharehouse_pipeline.png" alt="Healthcare Data Warehouse" class="project-card__img" loading="lazy" />
+          </div>
+          <div class="project-card__content">
+            <span class="project-card__badge">Data Engineering</span>
+            <h3 class="project-card__title">Healthcare Data Warehouse</h3>
+            <p class="project-card__problem"><strong>Problem:</strong> Sensitive medical data required secure, traceable ETL pipelines compliant with strict healthcare standards.</p>
+            <p class="project-card__approach"><strong>Approach:</strong> Engineered end-to-end ETL pipelines on Snowflake with Spark, implementing full audit trails and CI/CD for reproducibility.</p>
+            <p class="project-card__result"><strong>Impact:</strong> Achieved full traceability compliance for medical data processing workflows.</p>
+            <div class="project-card__stack">
+              <span>Snowflake</span><span>Spark</span><span>SQL</span><span>CI/CD</span>
+            </div>
+            <div class="project-card__links">
+              <a href="https://github.com/paulcmt/SmartTeem" target="_blank" rel="noopener" class="project-card__link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PUBLICATIONS ========== -->
+  <section id="publications" class="section publications">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__number">03</span>
+        <h2 class="section__title">Research & Publications</h2>
+      </div>
+
+      <div class="publications__timeline">
+        <div class="pub-entry">
+          <div class="pub-entry__icon" aria-label="Paper">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          </div>
+          <div class="pub-entry__content">
+            <span class="pub-entry__type">Peer-Reviewed Paper</span>
+            <h3 class="pub-entry__title">Optimal Design of a Magnetic Sensor for a Linear Machine</h3>
+            <p class="pub-entry__meta">EEE-AM 2023 &middot; IEEE &middot; Co-authored</p>
+            <p class="pub-entry__desc">Optimized magnetic sensor designs using finite element analysis and particle swarm optimization, maximizing detection performance while respecting peak flux density constraints.</p>
+            <a href="https://doi.org/10.1109/EEE-AM58328.2023.10394938" target="_blank" rel="noopener" class="pub-entry__link">
+              DOI: 10.1109/EEE-AM58328.2023.10394938
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+          <span class="pub-entry__year">2023</span>
+        </div>
+
+        <div class="pub-entry">
+          <div class="pub-entry__icon" aria-label="Research">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </div>
+          <div class="pub-entry__content">
+            <span class="pub-entry__type">Ongoing Research</span>
+            <h3 class="pub-entry__title">3D ROC Curves for Bayesian Classification Evaluation</h3>
+            <p class="pub-entry__meta">Uppsala University &middot; 2025–Present</p>
+            <p class="pub-entry__desc">Developing novel evaluation metrics for Bayesian classification models using three-dimensional ROC surfaces. Building decision support interfaces for clinical teams.</p>
+          </div>
+          <span class="pub-entry__year">2025</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EXPERIENCE ========== -->
+  <section id="experience" class="section experience">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__number">04</span>
+        <h2 class="section__title">Experience</h2>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline__line" aria-hidden="true"></div>
+
+        <div class="timeline__entry">
+          <div class="timeline__dot" aria-hidden="true"></div>
+          <div class="timeline__date">Dec 2025 — Present</div>
+          <div class="timeline__card">
+            <h3 class="timeline__role">AI Research Scientist</h3>
+            <p class="timeline__company">Uppsala University &middot; Stockholm, Sweden</p>
+            <ul class="timeline__details">
+              <li>Designed decision support tools for medical staff to interpret AI model uncertainty</li>
+              <li>Evaluated Bayesian models with novel 3D ROC metrics and built user-friendly interfaces for clinical teams</li>
+            </ul>
+            <div class="timeline__stack">PyTorch &middot; Pandas &middot; NumPy &middot; Scikit-learn</div>
+          </div>
+        </div>
+
+        <div class="timeline__entry">
+          <div class="timeline__dot" aria-hidden="true"></div>
+          <div class="timeline__date">Aug 2024 — Mar 2025</div>
+          <div class="timeline__card">
+            <h3 class="timeline__role">Data Engineer & Data Scientist</h3>
+            <p class="timeline__company">Polynom &middot; Paris, France</p>
+            <ul class="timeline__details">
+              <li>Architected a centralized data platform unifying client data sources</li>
+              <li>Developed ELT pipelines translating business needs into technical solutions</li>
+              <li>Prototyped AI tools to automate internal processes</li>
+            </ul>
+            <div class="timeline__stack">GCP &middot; FastAPI &middot; PostgreSQL &middot; Airflow &middot; Docker</div>
+          </div>
+        </div>
+
+        <div class="timeline__entry">
+          <div class="timeline__dot" aria-hidden="true"></div>
+          <div class="timeline__date">Apr 2023 — Jul 2023</div>
+          <div class="timeline__card">
+            <h3 class="timeline__role">Research Assistant</h3>
+            <p class="timeline__company">University of Science and Technology of Hanoi &middot; Vietnam</p>
+            <ul class="timeline__details">
+              <li>Optimized magnetic sensor designs using finite element analysis and PSO</li>
+              <li>Co-authored IEEE peer-reviewed paper on sensor optimization</li>
+            </ul>
+            <div class="timeline__stack">Python &middot; Ansys &middot; MATLAB</div>
+          </div>
+        </div>
+
+        <div class="timeline__entry">
+          <div class="timeline__dot" aria-hidden="true"></div>
+          <div class="timeline__date">2023 — 2026</div>
+          <div class="timeline__card">
+            <h3 class="timeline__role">MSc Computer Science, AI & Data Science</h3>
+            <p class="timeline__company">Université de Technologie de Compiègne (UTC) &middot; France</p>
+            <ul class="timeline__details">
+              <li>Excellence with Honors — Data Warehousing, Computer Vision, Algorithms & Optimization</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== BLOG / NOTES ========== -->
+  <section id="blog" class="section blog">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__number">05</span>
+        <h2 class="section__title">Technical Notes</h2>
+      </div>
+
+      <div class="blog__grid">
+        <article class="blog-card">
+          <div class="blog-card__meta">
+            <span class="blog-card__date">Feb 2026</span>
+            <span class="blog-card__read">6 min read</span>
+          </div>
+          <h3 class="blog-card__title">Why Bayesian Methods Matter for Clinical AI</h3>
+          <p class="blog-card__excerpt">Standard classification metrics fall short when lives are at stake. Here's how Bayesian approaches provide the uncertainty quantification that clinicians actually need.</p>
+          <span class="blog-card__cta">Read more &rarr;</span>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-card__meta">
+            <span class="blog-card__date">Jan 2026</span>
+            <span class="blog-card__read">8 min read</span>
+          </div>
+          <h3 class="blog-card__title">Building a Production Data Platform from Scratch</h3>
+          <p class="blog-card__excerpt">Lessons from architecting a unified data platform on GCP — from messy client sources to clean, queryable pipelines. What worked, what didn't, and what I'd change.</p>
+          <span class="blog-card__cta">Read more &rarr;</span>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-card__meta">
+            <span class="blog-card__date">Nov 2025</span>
+            <span class="blog-card__read">5 min read</span>
+          </div>
+          <h3 class="blog-card__title">Deepfake Detection: Hybrid AI vs. Pure Neural Approaches</h3>
+          <p class="blog-card__excerpt">Combining expert systems with deep learning for voice authentication — a hackathon experiment that revealed the value of symbolic AI in an era of pure neural networks.</p>
+          <span class="blog-card__cta">Read more &rarr;</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__number">06</span>
+        <h2 class="section__title">Get in Touch</h2>
+      </div>
+
+      <div class="contact__grid">
+        <div class="contact__text">
+          <p class="contact__intro">
+            Whether you're interested in research collaboration, have a data challenge to solve, or just want to discuss the future of AI — I'd love to hear from you.
+          </p>
+          <div class="contact__socials">
+            <a href="https://github.com/Massyle78" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/massyle-oumessaoud/" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              <span>LinkedIn</span>
+            </a>
+            <a href="mailto:massyle.oumessaoud@etu.utc.fr" class="social-link" aria-label="Email">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>Email</span>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact__form" action="https://formspree.io/f/mjgajeyo" method="POST">
+          <div class="form-group">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" id="name" name="name" class="form-input" required autocomplete="name" />
+          </div>
+          <div class="form-group">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" id="email" name="email" class="form-input" required autocomplete="email" />
+          </div>
+          <div class="form-group">
+            <label for="message" class="form-label">Message</label>
+            <textarea id="message" name="message" class="form-input form-textarea" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#publications">Research</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <p class="footer__copy">&copy; 2026 Massyle Oumessaoud.</p>
+    </div>
+  </footer>
+
+  <!-- ========== TERMINAL EASTER EGG ========== -->
+  <div class="terminal" id="terminal" aria-hidden="true">
+    <div class="terminal__header">
+      <span class="terminal__dot terminal__dot--red"></span>
+      <span class="terminal__dot terminal__dot--yellow"></span>
+      <span class="terminal__dot terminal__dot--green"></span>
+      <span class="terminal__title">massyle@portfolio:~$</span>
+      <button class="terminal__close" aria-label="Close terminal">&times;</button>
+    </div>
+    <div class="terminal__body" id="terminal-body">
+      <p><span class="terminal__prompt">$</span> cat about.txt</p>
+      <p class="terminal__output">Massyle Oumessaoud — AI Research Scientist</p>
+      <p class="terminal__output">Uppsala University | UTC MSc CS & AI</p>
+      <p class="terminal__output">---</p>
+      <p><span class="terminal__prompt">$</span> ls skills/</p>
+      <p class="terminal__output">pytorch/  scikit-learn/  gcp/  airflow/  langchain/  fastapi/  docker/</p>
+      <p><span class="terminal__prompt">$</span> echo $STATUS</p>
+      <p class="terminal__output">Open to research collaborations and exciting challenges.</p>
+      <p><span class="terminal__prompt">$</span> <span class="terminal__cursor">_</span></p>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script type="module" src="/src/js/main.js"></script>
+</body>
+</html>
