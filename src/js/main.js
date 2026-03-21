@@ -207,7 +207,7 @@ if (canvas) {
 
       ctx.beginPath();
       ctx.arc(n.x, n.y, n.r, 0, Math.PI * 2);
-      ctx.fillStyle = `rgba(${accentRGB}, 0.6)`;
+      ctx.fillStyle = `rgba(${accentRGB}, 0.85)`;
       ctx.fill();
     });
 
@@ -218,12 +218,12 @@ if (canvas) {
         const dy = nodes[i].y - nodes[j].y;
         const dist = Math.sqrt(dx * dx + dy * dy);
         if (dist < connectionDist) {
-          const alpha = (1 - dist / connectionDist) * 0.25;
+          const alpha = (1 - dist / connectionDist) * 0.45;
           ctx.beginPath();
           ctx.moveTo(nodes[i].x, nodes[i].y);
           ctx.lineTo(nodes[j].x, nodes[j].y);
           ctx.strokeStyle = `rgba(${accentRGB}, ${alpha})`;
-          ctx.lineWidth = 0.6;
+          ctx.lineWidth = 0.8;
           ctx.stroke();
         }
       }
