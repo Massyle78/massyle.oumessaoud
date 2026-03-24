@@ -352,7 +352,7 @@ img { max-width: 100%; display: block; }
 }
 
 [data-theme="light"] .hero__canvas {
-  opacity: 0.2;
+  opacity: 0.55;
 }
 
 .hero__content {

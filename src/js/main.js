@@ -42,8 +42,8 @@ if (window.matchMedia('(pointer: fine)').matches && cursorDot && cursorRing) {
 const themeToggle = document.querySelector('.theme-toggle');
 const html = document.documentElement;
 
-// Load saved theme or default to dark
-const savedTheme = localStorage.getItem('theme') || 'dark';
+// Load saved theme or default to light
+const savedTheme = localStorage.getItem('theme') || 'light';
 html.setAttribute('data-theme', savedTheme);
 
 themeToggle?.addEventListener('click', () => {
@@ -190,7 +190,7 @@ if (canvas) {
 
   function getAccentColor() {
     const theme = html.getAttribute('data-theme');
-    return theme === 'light' ? '0, 158, 138' : '0, 229, 199';
+    return theme === 'light' ? '0, 120, 105' : '0, 229, 199';
   }
 
   function draw() {
@@ -218,7 +218,8 @@ if (canvas) {
         const dy = nodes[i].y - nodes[j].y;
         const dist = Math.sqrt(dx * dx + dy * dy);
         if (dist < connectionDist) {
-          const alpha = (1 - dist / connectionDist) * 0.45;
+          const isLight = html.getAttribute('data-theme') === 'light';
+          const alpha = (1 - dist / connectionDist) * (isLight ? 0.7 : 0.45);
           ctx.beginPath();
           ctx.moveTo(nodes[i].x, nodes[i].y);
           ctx.lineTo(nodes[j].x, nodes[j].y);
